@@ -42,11 +42,13 @@ public class HTTPServer {
         //No olvide los encabezados
         //implemente pasar parametros
 
+        String query = "Daniel";
+
         String pathGet = "/components/hello";
         Method m = components.get(pathGet.substring(11));
         if(m != null){
             System.out.println("Iniciando el Método");
-            System.out.println(m.invoke(null));
+            System.out.println(m.invoke(null, query));
         }
 
     }

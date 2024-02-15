@@ -4,8 +4,8 @@ package org.example;
 public class HelloController {
 
     @GetMapping("/hello")
-    public static String index() {
-        return "Greetings from Spring Boot!";
+    public static String index(String a) {
+        return "Greetings from Spring Boot!   " + a;
     }
 
 }
