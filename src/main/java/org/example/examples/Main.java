@@ -1,4 +1,4 @@
-package org.example;
+package org.example.examples;
 
 
 import java.lang.reflect.Constructor;
@@ -10,7 +10,7 @@ import static java.lang.System.out;
 
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException {
-        Class c  = Class.forName("org.example.Student");
+        Class c  = Class.forName("org.example.examples.Student");
         Field[] fields = c.getFields();
         printMembers(fields, "Campos");
         Constructor[] constructors = c.getConstructors();
